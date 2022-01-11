@@ -1,0 +1,14 @@
+{% load static %}
+<div class="border-end border-warning h-100">
+    <div class='text-center'>
+        <img src="{% static 'Resume_front/images/mphoto.jpg' %}" alt="ProfilePic" class="img-fluid rounded-circle mt-5" height='100px' width='100px'>
+        <h3 class='text-light mt-3'>Suraj Mehra</h3>
+    </div>
+    <hr class='border border-light'>
+    <nav class="nav nav-pills flex-column text-center">
+        <a href="{% url 'home' %}"{% if request.path == '/' %}class='nav-link active'{% endif %} class='nav-link'>Home</a>
+        <a href="{% url 'skill' %}"{% if request.path == '/skill/' %}class='nav-link active'{% endif %} class="nav-link">Skill</a>
+        <a href="{% url 'project' %}"{% if request.path == '/project/' %}class='nav-link active'{% endif %} class="nav-link">Project</a>
+        <a href="{% url 'contact' %}"{% if request.path == '/contact/' %}class='nav-link active'{% endif %} class="nav-link">Contacts</a>
+    </nav>
+</div>
