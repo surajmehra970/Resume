@@ -10,5 +10,6 @@
         <a href="{% url 'skill' %}"{% if request.path == '/skill/' %}class='nav-link active'{% endif %} class="nav-link">Skill</a>
         <a href="{% url 'project' %}"{% if request.path == '/project/' %}class='nav-link active'{% endif %} class="nav-link">Project</a>
         <a href="{% url 'contact' %}"{% if request.path == '/contact/' %}class='nav-link active'{% endif %} class="nav-link">Contacts</a>
+        <a href="{% url 'donation' %}"{% if request.path == '/Donation/' %}class='nav-link active'{% endif %} class="nav-link">Donation</a>
     </nav>
 </div>

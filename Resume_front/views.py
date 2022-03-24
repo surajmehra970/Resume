@@ -21,4 +21,7 @@ def contact(request):
 
 def project(request):
     return render(request, 'project.html')
+
+def Donetions(request):
+    return render(request, 'Donation.html')
     
